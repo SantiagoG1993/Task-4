@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="shortcut icon" href="../Imagenes/icon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="../../Assets/Pages/aboutUs.html">About us</a>
+        <a href="./contact.html">Contact</a>
+        <a href="../Pages/beneficiosConsejos.html"> Benefits & Tips</a>
+        <a href="../Pages/informacion.html">Information</a>
+        <a href="#">Raffle</a>
+    </nav>
+      <img id="logo" src="../Imagenes/logo.png" alt="logo" >
+  </header>
+  <main>
+    <h1>Raffle</h1>
+    <h2>You can participate in a raffle. The prize is a coffee pot</h2>
+    <div class="contenedor_raffle">
+      <div class="contenedor_img_raffle">
+        <img class="img_raffle" src="../Imagenes/cup-w-coffee.jpg" alt="cup_with_coffee">
+        <img class="img_raffle" src="../Imagenes/heart-coffee.jpg" alt="heart_coffee">
+      </div>
+        <!--Name Last name Email-->
+        <form action="show_data.html" method="get">
+          <div class="form_up">
+              <label for="name">First name</label>
+              <input type="text" id="name" name="Name">
+              <label for="lastname">Last name</label>
+              <input type="text" id="lastname" name="Last_name">
+              <label for="email">Email</label>
+              <input type="email" name="Email" id="email">
+              <!--Select Colour-->
+              <label for="selectcolour">What colour would you like the coffee pot:</label>
+              <select name="Pot_colour" id="selectcolour">
+                <option value="red">Red</option>
+                <option value="grey">Grey</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+              </select>
+            <!--Select Country-->
+            <label for="selectcountry">Country:</label>
+            <select name="Country" id="selectcountry">
+              <option value="eeuu">United States</option>
+              <option value="can">Canada</option>
+              <option value="fra">France</option>
+              <option value="spa">Spain</option>
+              <option value="arg">Argentina</option>
+            </select>
+        </div>
+          <!--Payment-->
+        <div class="payment">  
+              <p>Payment options:</p>
+              <input type="radio" value="Cash" name="Pay" id="cash">Cash<br>
+              <input type="radio" value="Credit Card" name="Pay" id="credit">Credit Card<br>
+              <input type="radio" value="Debit Card" name="Pay" id="debit">Debit Card<br>
+        </div>
+          <!--Services-->
+        <div class="services">
+            <label for="services">Services:</label>
+            <textarea name="Services" id="services" cols="30" rows="10"></textarea>
+        </div>
+          <!--Accept terms-->
+        <div class="terms">
+          <input type="checkbox" value="accepted" name="Accepted" id="accept" required>
+          <label for="accept">I accept terms and conditions.</label>
+        </div>
+          <!--Send-->
+        <div class="submitbtn">
+          <input type="submit" value="Send">
+        </div>
+      </form>  
+    </div>
+  </main>
+  <footer>
+    <div class="footer_raffle">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112768.61264217866!2d-82.54476318996434!3d27.96269990905754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1681940179634!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+</body>
+</html>
